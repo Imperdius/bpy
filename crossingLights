@@ -1,0 +1,33 @@
+import time
+import os
+while True:
+    print("The traffic light is green and the little man is red")
+    print("What would you like to do?")
+    print("1) Press da button")
+    print("2) ")
+    print("3) exit")
+    choice = input(">")
+    try:
+        int(choice)
+    except ValueError:
+        print("Please enter one of the choices")
+    else:
+        choice = int(choice)
+        if choice == 1:
+            print("The traffic light turned amber")
+            time.sleep(4)
+            print("The traffic light tuned red")
+            time.sleep(2)
+            print("The little man is now green, buzzer turned on")
+            time.sleep(8)
+            print("Green man is flashing, buzzer pitch changed")
+            time.sleep(4)
+            print("Little man is now Red, buzzer turned off, and traffic light turned red and amber")
+            time.sleep(2)
+            print("Traffic light returned to Green")
+        elif choice == 3:
+            print("k bye")
+            time.sleep()
+            sys.exit
+        else:
+            print("Please enter one of the options")

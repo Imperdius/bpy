@@ -1,0 +1,4 @@
+
+dict = {}
+file = input("Enter filename")
+f = open(filename, "r")
